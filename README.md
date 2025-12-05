@@ -53,6 +53,9 @@ grpcurl -plaintext -proto protos/model.proto localhost:50051 mlservice.v1.Predic
 python -m client.client
 ```
 
+<img width="974" height="582" alt="image" src="https://github.com/user-attachments/assets/b304fc88-05bf-4812-8aef-763ab57ded50" />
+<img width="974" height="582" alt="image" src="https://github.com/user-attachments/assets/3dbf1b42-a93b-4e6a-ae2b-d655ee2e51ad" />
+
 
 
 
