@@ -27,6 +27,33 @@ pip install -r requirements.txt
 MODEL_PATH=models/model.pkl MODEL_VERSION=v1.0.0 python -m server.server
 ```
 
+# В другом терминале:
+```bash
+python -m client.client
+```
+# Docker
+
+# Сборка образа:
+```bash
+docker build -t grpc-ml-service .
+```
+
+# Запуск:
+```bash
+docker run -p 50051:50051 grpc-ml-service
+```
+# Проверка эндпоинтов
+```bash
+/health (grpcurl)
+grpcurl -plaintext -proto protos/model.proto localhost:50051 mlservice.v1.PredictionService.Health
+```
+
+# /predict (Python-клиент)
+```bash
+python -m client.client
+```
+
+
 
 
 
